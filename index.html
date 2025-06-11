@@ -94,16 +94,15 @@
                 <span class="gradient-text">PanditJi</span>
             </h1>
             <p class="text-lg sm:text-xl mb-8">Your One-Stop Solution for Pooja Essentials and Experienced Priest Services.</p>
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <a href="#" class="text-white flex items-center justify-center px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                    <img src="poojaimages/playstore-bg.png" alt="Google Play Icon" class="h-16">
-                </a>
-                <a href="#" class="text-white flex items-center justify-center px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                    <img src="poojaimages/appstore-bg.png" alt="App Store Icon" class="h-16">
-                </a>
+            
+            <!-- Curved Favicons Row -->
+            <div class="flex justify-center items-center gap-6">
+                <img src="poojaimages/plays.avif" alt="Google Play Icon" class="h-14 sm:h-16 rounded-lg shadow-md hover:scale-105 transition duration-300">
+                <img src="poojaimages/apps.avif" alt="App Store Icon" class="h-14 sm:h-16 rounded-lg shadow-md hover:scale-105 transition duration-300">
             </div>
         </div>
     </section>
+    
 
     <!-- About Us Section -->
     <section id="about" class="py-16 px-4 md:px-8 bg-white text-gray-800">
@@ -189,6 +188,50 @@
             </div>
         </div>
     </section>
+    <section id="how-to-book" class="bg-white py-16 px-4 sm:px-8 lg:px-20">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">How to Book a Priest</h2>
+      
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center text-center p-4 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <img src="icons/step1.png" alt="Step 1" class="h-16 mb-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Choose a Puja</h3>
+              <p class="text-sm text-gray-600">Select the type of puja or ritual you want to perform.</p>
+            </div>
+      
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center text-center p-4 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <img src="icons/step2.png" alt="Step 2" class="h-16 mb-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Pick a Date</h3>
+              <p class="text-sm text-gray-600">Choose your preferred date and time for the ceremony.</p>
+            </div>
+      
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center text-center p-4 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <img src="icons/step3.png" alt="Step 3" class="h-16 mb-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Assign a Pandit</h3>
+              <p class="text-sm text-gray-600">We match you with an experienced local pandit.</p>
+            </div>
+      
+            <!-- Step 4 -->
+            <div class="flex flex-col items-center text-center p-4 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <img src="icons/step4.png" alt="Step 4" class="h-16 mb-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Get Puja Samagri</h3>
+              <p class="text-sm text-gray-600">All items needed for the puja delivered or brought by pandit.</p>
+            </div>
+      
+            <!-- Step 5 -->
+            <div class="flex flex-col items-center text-center p-4 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <img src="icons/step5.png" alt="Step 5" class="h-16 mb-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Attend & Get Blessed</h3>
+              <p class="text-sm text-gray-600">Enjoy a peaceful, guided ritual from the comfort of home.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
 
     <!-- Frequently Asked Questions (FAQs) Section -->
     <section id="faqs" class="py-16 px-4 md:px-8 bg-gray-50 text-gray-800">
@@ -270,35 +313,37 @@
           </div>
       
           <!-- Right Side: Contact Form -->
-          <div class="bg-white text-black p-6 rounded-xl shadow-lg">
+          <div class="bg-white/20 backdrop-blur-md text-white p-6 rounded-xl shadow-lg border border-white/30">
             <form action="https://formsubmit.co/guptanujk@gmail.com" method="POST" class="space-y-4">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
-      
+          
               <div>
                 <label class="block mb-1 font-semibold">Name</label>
-                <input type="text" name="name" required class="w-full border border-gray-300 rounded px-4 py-2">
+                <input type="text" name="name" required class="w-full bg-transparent border border-gray-300 text-white rounded px-4 py-2 placeholder-white/80">
               </div>
-      
+          
               <div>
                 <label class="block mb-1 font-semibold">Email</label>
-                <input type="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2">
+                <input type="email" name="email" required class="w-full bg-transparent border border-gray-300 text-white rounded px-4 py-2 placeholder-white/80">
               </div>
+          
               <div>
-                <label class="block mb-1 font-semibold">Phone no</label>
-                <input type="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2">
+                <label class="block mb-1 font-semibold">Phone</label>
+                <input type="text" name="phone" required class="w-full bg-transparent border border-gray-300 text-white rounded px-4 py-2 placeholder-white/80">
               </div>
-      
+          
               <div>
                 <label class="block mb-1 font-semibold">Message</label>
-                <textarea name="message" rows="4" required class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+                <textarea name="message" rows="4" required class="w-full bg-transparent border border-gray-300 text-white rounded px-4 py-2 placeholder-white/80"></textarea>
               </div>
-      
+          
               <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition">
                 Send Message
               </button>
             </form>
           </div>
+          
       
         </div>
       </section>
