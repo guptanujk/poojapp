@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PandiJi - Spirituality at Ease</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to match the PandiJi theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background */
+        }
+        .header-bg {
+            background: linear-gradient(90deg, #C10001 0%, #5B0000 100%);
+        }
+        .hero-bg {
+            /* Updated background image with user-provided image */
+            background-image: url('outub.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #F9BD36, #FFED7D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #F9BD36, #FFED7D);
+            color: #C10001; /* Dark red text on gold button */
+        }
+        .section-red-gradient {
+            background: linear-gradient(163.57deg, #AB0202 0%, #BA0307 21.76%, #CE0205 37.82%, #950303 64.07%, #5B0000 100%);
+        }
+        /* Style for service cards on hover */
+        .service-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card:hover img {
+            transform: scale(1.1);
+        }
+        .service-card .overlay {
+            background: rgba(0, 0, 0, 0.4);
+            transition: background 0.3s ease-in-out;
+        }
+        .service-card:hover .overlay {
+            background: rgba(0, 0, 0, 0.75);
+        }
+        .service-card p {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .service-card:hover p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="header-bg text-white fixed top-0 left-0 w-full z-40 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <a href="#home">
+                    <img src="poojaimages\logo5.png" alt="PanditJi Logo" class="h-16 w-auto">
+                </a>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 md:space-x-8">
+                    <li>
+                        <a href="#contact" class="btn-primary flex items-center justify-center px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero/Banner Section -->
+    <section id="home" class="hero-bg relative h-screen flex items-center justify-center text-center text-white py-20 px-4">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for text readability -->
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                <span class="gradient-text">PanditJi</span>
+            </h1>
+            <p class="text-lg sm:text-xl mb-8">Find Trusted and Experienced Pandits Near You.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#" class="text-white flex items-center justify-center px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="poojaimages/playstore-bg.png" alt="Google Play Icon" class="h-16">
+                </a>
+                <a href="#" class="text-white flex items-center justify-center px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="poojaimages/appstore-bg.png" alt="App Store Icon" class="h-16">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-4 md:px-8 bg-white text-gray-800">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl font-bold text-red-700 mb-8">About Us</h2>
+            <p class="text-lg leading-relaxed">
+                We are dedicated to making traditional rituals simple and accessible for everyone. Our mission is to bring authentic pooja experiences to your doorstep by delivering curated pooja kits and enabling easy priest bookings—all tailored to your regional and cultural preferences. Whether you’re a busy professional or living away from home, we ensure your spiritual needs are met with convenience and care.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services We Offer Section -->
+    <section id="services" class="section-red-gradient text-white py-16 px-4 md:px-8">
+        <div class="container mx-auto max-w-6xl text-center">
+            <h2 class="text-4xl font-bold mb-12">Services We Offer</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card relative rounded-xl overflow-hidden shadow-lg h-64 flex items-end">
+                    <img src="https://placehold.co/600x400/C10001/FFFFFF?text=Pooja+Kits" alt="Curated Pooja Kits" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="overlay absolute inset-0 flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Curated Pooja Kits</h3>
+                        <p class="text-sm">Complete kits for every festival and ritual, customized to your tradition and region.</p>
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="service-card relative rounded-xl overflow-hidden shadow-lg h-64 flex items-end">
+                    <img src="https://placehold.co/600x400/C10001/FFFFFF?text=Priest+Booking" alt="Priest Booking" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="overlay absolute inset-0 flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Priest Booking</h3>
+                        <p class="text-sm">Verified, experienced priests available in your preferred language and tradition.</p>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card relative rounded-xl overflow-hidden shadow-lg h-64 flex items-end">
+                    <img src="https://placehold.co/600x400/C10001/FFFFFF?text=Doorstep+Delivery" alt="Doorstep Delivery" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="overlay absolute inset-0 flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Doorstep Delivery</h3>
+                        <p class="text-sm">Timely delivery of all pooja essentials, so you never miss a ritual.</p>
+                    </div>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="service-card relative rounded-xl overflow-hidden shadow-lg h-64 flex items-end">
+                    <img src="https://placehold.co/600x400/C10001/FFFFFF?text=Digital+Guides" alt="Digital Guides" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="overlay absolute inset-0 flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Digital Guides</h3>
+                        <p class="text-sm">Step-by-step instructions included with every kit for a hassle-free experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Book Section -->
+    <section id="how-to-book" class="py-16 px-4 md:px-8 bg-white text-gray-800">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl font-bold text-red-700 mb-12">How to Book Your Pooja Kit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <!-- Step 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-2">1. Choose Your Ritual</h3>
+                    <p class="text-lg">Select the pooja or festival you want to perform from our comprehensive list.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-2">2. Customize Your Kit</h3>
+                    <p class="text-lg">Pick your tradition, region, and add priest booking if needed for a personalized experience.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-2">3. Place Your Order</h3>
+                    <p class="text-lg">Complete your booking with secure online payment options for a smooth transaction.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-2">4. Receive at Home</h3>
+                    <p class="text-lg">Your curated kit and/or priest will arrive at your chosen time and location.</p>
+                </div>
+                <!-- Step 5 (full width for emphasis) -->
+                <div class="bg-red-700 text-white p-6 rounded-lg shadow-md md:col-span-2">
+                    <h3 class="text-2xl font-semibold mb-2">5. Perform Your Ritual</h3>
+                    <p class="text-lg">Follow the included digital guide for a smooth, fulfilling pooja experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQs) Section -->
+    <section id="faqs" class="py-16 px-4 md:px-8 bg-gray-50 text-gray-800">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-red-700 text-center mb-12">Frequently Asked Questions (FAQs)</h2>
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Q1: What is included in a pooja kit?</h3>
+                    <p class="text-lg">Each kit contains all essential items required for the specific ritual or festival, tailored to your tradition and region. A detailed list is provided on the product page.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Q2: How do I book a priest through your platform?</h3>
+                    <p class="text-lg">Simply select the “Book a Priest” option during your kit order, choose your preferred language and tradition, and we’ll match you with a verified priest.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Q3: Can I order just the pooja kit without booking a priest?</h3>
+                    <p class="text-lg">Yes! You can order only the pooja kit or add priest booking as per your need.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Q4: How far in advance should I place my order?</h3>
+                    <p class="text-lg">We recommend placing your order at least 2-3 days before your planned pooja to ensure timely delivery and priest availability.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Q5: Do you deliver to my city?</h3>
+                    <p class="text-lg">We currently serve major cities and towns across India. Enter your pin code at checkout to confirm delivery availability.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Q6: What payment methods do you accept?</h3>
+                    <p class="text-lg">We accept all major credit/debit cards, UPI, net banking, and wallet payments.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Q7: What if I need help or have a special request?</h3>
+                    <p class="text-lg">Our support team is always here to assist you. Contact us via email, phone, or through the app for any special requirements or questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section-red-gradient text-white py-16 px-4 md:px-8">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg mb-6">Have questions or need assistance?</p>
+            <div class="space-y-4 text-xl">
+                <p>Email: <a href="mailto:youremail@example.com" class="text-yellow-400 hover:underline">youremail@example.com</a></p>
+                <p>Phone: <a href="tel:+919876543210" class="text-yellow-400 hover:underline">+91 98765 43210</a></p>
+            </div>
+            <div class="mt-8">
+                <p class="text-lg mb-4">Follow us on:</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-white hover:text-yellow-400 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.24.195 2.24.195v2.45h-1.26c-1.247 0-1.637.77-1.637 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z"/></svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-white hover:text-yellow-400 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M7.051 0h9.899c3.864 0 6.95 3.086 6.95 6.951v9.899c0 3.864-3.086 6.95-6.95 6.95h-9.899c-3.864 0-6.951-3.086-6.951-6.95v-9.899c0-3.864 3.087-6.951 6.951-6.951zm-.051 2.316c-2.54 0-4.634 2.094-4.634 4.635v9.899c0 2.54 2.094 4.634 4.634 4.634h9.899c2.54 0 4.635-2.094 4.635-4.634v-9.899c0-2.541-2.095-4.635-4.635-4.635h-9.899zm12 2.766a2.001 2.001 0 1 0-.001 4.001 2.001 2.001 0 0 0 0-4.001zm-6.95 2.001a4.95 4.95 0 1 0 .001 9.9 4.95 4.95 0 0 0-.001-9.9zm0 2.316a2.635 2.635 0 1 1-.001 5.27 2.635 2.635 0 0 1 0-5.27z"/></svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-white hover:text-yellow-400 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.861.264-4.717 1.89-4.717 4.962v7.309c0 3.067.857 4.707 4.717 4.962 3.6.246 11.626.246 15.23 0 3.865-.264 4.717-1.896 4.717-4.962V8.146c0-3.072-.852-4.707-4.717-4.962zm-9.59 12.433v-6.929l5.017 3.465-5.017 3.464z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-4 md:px-8 text-center">
+        <div class="container mx-auto max-w-6xl">
+            <p class="text-lg mb-4">Experience devotion, delivered. Download our app and get started today!</p>
+            <p class="text-sm">&copy; 2025 PandiJi. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
